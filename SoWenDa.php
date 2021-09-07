@@ -14,10 +14,10 @@
 		
 		const API = 'https://wenda.so.com/search/';
 		const RULES = [
-			'title' => [ '.h3>a' , 'text' ] ,
-			'link'  => [ '.h3>a' , 'href' ]
+			'title' => [ 'h3 a' , 'text' ] ,
+			'link'  => [ 'h3 a' , 'href' ]
 		];
-		const RANGE = '.qa-list>.js-normal-item';
+		const RANGE = '#js-qa-list li';
 		protected $ql;
 		protected $keyword;
 		protected $pageNumber = 10;
@@ -78,7 +78,7 @@
 		}
 		
 		/**
-		 * 得到百度跳转的真正地址
+		 * 得到真正地址
 		 * @param $url
 		 * @return mixed
 		 */
