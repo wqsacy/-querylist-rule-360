@@ -17,7 +17,7 @@
 			'title' => [ 'h3 a' , 'text' ] ,
 			'link'  => [ 'h3 a' , 'href' ]
 		];
-		const RANGE = '#js-qa-list li';
+		const RANGE = '.qa-i-hd';
 		protected $ql;
 		protected $keyword;
 		protected $pageNumber = 10;
